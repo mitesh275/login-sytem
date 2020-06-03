@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+		<head>
+		<title>LOGIN</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 		<h1 id="main_h">LOGIN</h1>
+ 		<div class="login">
+			<img src="profile_image.png" id="pi">
+			<br>
+			<br>
+			<form name="login" method="POST">
+				<input type="email" name="email" id="email"placeholder="Enter your email id">
+				<br>
+				<br>
+				<input type="password" id="password" placeholder="Enter your password">
+				<br>
+				<br>
+				<button type="submit" onclick="return validate()">Submit</button>     
+				<button type="reset">Reset</button>
+			</form>
+ 		</div>
+
+ 		<script type="text/javascript">
+ 			function validate(){
+ 				email = document.login.email;
+ 				password = document.login.password;
+ 				if(email.value ==''){
+ 					alert('enter email please');
+ 					return false;
+ 				}else if(password.value == ''){
+ 					alert("enter password");
+ 					return false;
+ 				}else{
+ 					return true;
+ 				}
+ 			}
+ 		</script>
+ </body>
+ </html>
