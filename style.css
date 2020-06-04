@@ -18,7 +18,8 @@ button {
 	color: #000;
 	background-color: #fff;
 	box-shadow: 5px 5px #000;
-	font-family: arial;
+	font-family: times new roman;
+	font-size: 16px;
 	border-radius: 3px;
 }
 button:active {
